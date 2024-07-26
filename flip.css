@@ -1,0 +1,65 @@
+.cardBox {
+  perspective: 800px;
+  transition: all 0.8s ease 0s;
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease 0s;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link end -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link Swiper's CSS end -->
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn  -->
+    <link rel="stylesheet" href="./output/output.css" />
+    <!-- tab css  -->
+    <link rel="stylesheet" href="tabs.css" />
+    <title>INDALO</title>
+  </head>
+  <body>
+    <div class="mx-auto h-full max-w-7xl p-2">
+      <!-- payment method -->
+      <div>
+        <h2
+          class="text-white sm:text-4xl text-base sm:font-bold font-light uppercase sm:pb-16 pb-6 pt-11"
+        >
+          Payment Method
+        </h2>
+      </div>
+      <div>
+        <!-- payment method for mobile  -->
+
+        <!-- others 3  -->
+        <!-- tabs  -->
+        <div class="tabs">
+          <!-- Tab 1 & Content -->
+          <input type="radio" name="tab" id="tab1" role="tab" checked />
+          <label class="w-1/2" for="tab1" id="tab1-label"> tab 1</label>
+          <section aria-labelledby="tab1-label">
+            <p>tab1</p>
+            <p>tab1</p>
+            <p>tab1</p>
+            <p>tab1</p>
+          </section>
+
+          <!-- Tab 2 & Content -->
+          <input type="radio" name="tab" id="tab2" role="tab" />
+          <label class="w-1/2" for="tab2" id="tab2-label">tab2</label>
+          <section aria-labelledby="tab2-label"></section>
+        </div>
+        <!--tabs end  -->
+      </div>
+    </div>
+  </body>
+</html>

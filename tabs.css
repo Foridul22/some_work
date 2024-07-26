@@ -1,0 +1,55 @@
+/* For debug only */
+/* * {
+  border: 1px solid black;
+  padding: 1em;
+} */
+
+.tabs {
+  /* Step 1: Enable Flex on the container */
+  display: flex;
+  flex-direction: row;
+
+  /* Step 2: Enable flex-wrap to put content section below tab label */
+  flex-wrap: wrap;
+}
+.tabs > section {
+  /* Step 3: Move content <section> to the end, after the tab labels */
+  order: 999;
+
+  /* Step 4: Make sure the content <section> is 100% width */
+  width: 100%;
+
+  /* Step 5: Hide all content <section> by default */
+  display: none;
+}
+.tabs > input {
+  /* Step 6: Hide the radio inputs */
+  opacity: 0;
+
+  /* Step 7: Make sure the radio inputs don’t take up space in layout */
+  position: absolute;
+}
+/* Step 8: Select the label right next to the selected input */
+/* .tabs > input[type="radio"]:checked + label {
+  /* Step 9: Highlight the selected label 
+} */
+/* Step 10: Select the section right next to the label which is next to the selected input */
+.tabs > input[type="radio"]:checked + label + section {
+  /* Step 11: Unset the 'display:none' we did in step 5 */
+  display: unset;
+}
+
+.tabs > label {
+  padding: 0.5em 1em;
+  justify-content: center;
+}
+.tabs > label:last-of-type {
+  border-right: none;
+}
+/* .tabs > input[type="radio"]:checked + label {
+  /* ffffff 
+} */
+
+.tabs section {
+  padding: 1em;
+}

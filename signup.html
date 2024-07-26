@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="mx-auto max-w-7xl h-full">
+        <img
+          class="mx-auto pb-8"
+          class="w-[100px] h-[100px]"
+          src="./images/login_logo.png"
+        />
+
+        <div class="pl-10 pb-10 w-[660px] h-[455px] mx-auto">
+          <div class="flex flex-col">
+            <div class="flex gap-4 items-center pt-4 pl-10">
+              <a
+                class="text-base font-normal text-center text-blue-500"
+                href="#"
+                >Home</a
+              >
+              <img class="h-[16px]" src="./images/oblige.png" />
+
+              <a class="text-base font-normal" href="#">Sign-up</a>
+            </div>
+            <div class="pt-6 pl-10 pb-8">
+              <h2 class="text-xl font-bold pb-3">Sign-up</h2>
+              <p class="text-base font-normal">
+                Register yourself to do something on Lidia.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex flex-col gap-3 pb-4">
+              <h2>Full name</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="text"
+                placeholder="Muhammad Alfian"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <h2>NIK</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="text"
+                placeholder="e.g. 1050241708900001"
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex flex-col gap-3 pb-4">
+              <h2>Username</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="text"
+                placeholder="e.g. alfianchii"
+              />
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <h2>Email</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="email"
+                placeholder="e.g. alfian.ganteng@gmail.com"
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex flex-col gap-3 pb-4">
+              <h2>Phone</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="number"
+                placeholder="e.g. 082384763478"
+              />
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <h2>Born</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium text-gray-400"
+                type="date"
+                placeholder="05/23/2000"
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex flex-col gap-3 pb-4">
+              <h2>Address</h2>
+              <input
+                class="w-[315px] rounded-md px-4 py-2 border-2 focus:outline-none focus:ring-1 ring-violet-500 text-sm font-medium"
+                type="text"
+                placeholder="e.g. JL. Free Fire Factory, No. 1, Kla Only"
+              />
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <h2>Gender</h2>
+              <div class="flex flex-row gap-3">
+                <ul class="choices flex flex-row gap-3">
+                  <li>
+                    <label>
+                      <input class="" type="radio" name="question0" />
+                      <span>Male</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="" type="radio" name="question0" />
+                      <span>Female</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex flex-col gap-3">
+              <h2>Password</h2>
+              <div class="">
+                <input
+                  class="relative px-4 py-2 rounded-md border-2 focus:outline-none w-[315px] focus:ring-1 ring-violet-500 text-sm font-medium"
+                  type="password"
+                  placeholder="e.g. 4kuBu7uhM3dk1t"
+                />
+                <img
+                  class="absolute bottom-[-15px] right-[750px]"
+                  src="./images/Closed Eye.png"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <h2>Confirm Password</h2>
+              <div class="">
+                <input
+                  class="relative px-4 py-2 rounded-md border-2 focus:outline-none w-[315px] focus:ring-1 ring-violet-500 text-sm font-medium"
+                  type="password"
+                  placeholder="e.g. 4kuBu7uhM3dk1t"
+                />
+                <img
+                  class="absolute bottom-[-15px] right-[410px]"
+                  src="./images/Closed Eye.png"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-7">
+            <button
+              class="text-white text-xs font-bold px-[280px] py-3 bg-blue-500 rounded-md w-[655px] h-[43px]"
+            >
+              Sign-up
+            </button>
+          </div>
+          <div class="pt-10 text-center text-sm font-normal">
+            <h2 class="font-p">© 2024 Lidia. All rights reserved.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
